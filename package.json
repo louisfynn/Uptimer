@@ -1,7 +1,7 @@
 {
   "name": "Excriyin",
   "version": "1.0.0",
-  "description": "Discord.js v14 Command-Handler. Commands, Events, Permissions and Cooldown Handlers for Discord.js v14 bot - coded by Uo#1428",
+  "description": "Discord.js v14 Command-Handler. Commands, Events, Permissions and Cooldown Handlers for Discord.js v14 bot - coded by Excriyin#8519",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +29,6 @@
   },
   "repository": {
     "type": "discord",
-    "url": "https://discord.gg/pXRT2FusPb"
+    "url": "https://discord.gg/kUMhb37n8b"
   }
 }
