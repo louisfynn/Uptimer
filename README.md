@@ -25,7 +25,7 @@ You can also use our dashboard to add your links and monitor them too!
   ## 🔗 Resource Links
 
 - 🤖 Demo: [Invite Here](https://discord.com/oauth2/authorize?client_id=1034109651677085706&permissions=8&scope=bot%20applications.commands)
-- 🤝 Support Server: [Join Here](https://discord.gg/kUMhb37n8b)
+- 🤝 Support Server: [Join Here](https://discord.gg/p57Y2dvJzx)
 - 📂 Website URL: [Visit Here](https://uptimer.lol)
 
   
@@ -50,5 +50,5 @@ npm install
 - edit `config.js`
 - Type `node index.js` to start the bot
 
-If you need any additional help, make sure to join support server [here](https://discord.gg/kUMhb37n8b)
+If you need any additional help, make sure to join support server [here](https://discord.gg/p57Y2dvJzx)
 <br>
