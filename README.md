@@ -40,8 +40,8 @@ You can also use our dashboard to add your links and monitor them too!
 - Open the terminal and run the following commands
 
 ```
-git clone https://github.com/Excriyin/UptimerBot
-cd UptimerBot
+git clone https://github.com/Excriyin/Uptimer
+cd Uptimer
 npm install
 ```
 
