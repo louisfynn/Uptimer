@@ -24,7 +24,7 @@ const client = new Client({
   else file(client);
 });
 
-client.login("MTAzNDEwOTY1MTY3NzA4NTcwNg.Gmi2lS.9DB9H4mhA2FK0PBBEt3Dep8k3TEaC8DO5bLQ84").catch((error) => { console.log((error.message).bold.red) });
+client.login(process.env.TOKEN).catch((error) => { console.log((error.message).bold.red) });
 
 
 module.exports = client;
