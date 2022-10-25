@@ -3,7 +3,7 @@ const set = require(`${process.cwd()}/Assets/Config/settings`)
 module.exports = {
   async execute(client) {
     let aio = `Welcome to ${'Server Handler'.bold.blue} by ${'uptime.lol'.red}`;
-    let aio_server = `Support:- ${`https://discord.gg/kUMhb37n8b`.brightGreen}`
+    let aio_server = `Support:- ${`https://discord.gg/p57Y2dvJzx`.brightGreen}`
     let Uo = `Coded By ${`Excriyin#8519`.brightCyan.bold}`;
     console.clear()
     boxConsole([aio, aio_server, Uo]);
