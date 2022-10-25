@@ -26,7 +26,7 @@ You can also use our dashboard to add your links and monitor them too!
 
 - 🤖 Demo: [Invite Here](https://discord.com/oauth2/authorize?client_id=1034109651677085706&permissions=8&scope=bot%20applications.commands)
 - 🤝 Support Server: [Join Here](https://discord.gg/kUMhb37n8b)
-- 📂 Wesite URL: [Visit Here](https://uptimer.lol)
+- 📂 Website URL: [Visit Here](https://uptimer.lol)
 
   
 ## 📦 Prerequisites
