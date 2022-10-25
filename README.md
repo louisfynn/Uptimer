@@ -46,6 +46,7 @@ npm install
 ```
 
 - Wait for all the dependencies to be installed
+- Rename `.env.example` to `.env` and fill the values
 - edit `config.js`
 - Type `node index.js` to start the bot
 
