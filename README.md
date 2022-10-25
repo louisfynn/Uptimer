@@ -8,7 +8,7 @@ Uptimer is a bot that will monitor your projects/links and keep them running up 
 You can also use our dashboard to add your links and monitor them too!  
 <p align="center">
  <a href="https://uptimer.lol">Uptimer Website</a>
-
+<br>
 **Commands:**
 
 /monitor add  - Adds monitor to your project.
@@ -16,7 +16,8 @@ You can also use our dashboard to add your links and monitor them too!
 /monitor total - Show all projects
 /invite - Get the bot's invite link
 /ping - Check bot's ping
-  
+  </br>
+ 
   <br>
   
   ## 🔗 Resource Links
