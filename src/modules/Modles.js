@@ -89,7 +89,7 @@ module.exports = {
               setTimeout(() => {
                 interaction.editReply({
                   embeds: [
-                    client.Embed(false).setDescription(client.emotes.MESSAGE.i + " The Project you're Trying To Re ster Is Already In The Database")
+                    client.Embed(false).setDescription(client.emotes.MESSAGE.i + " The Project you're Trying To Register Is Already In The Database")
                   ]
                 });
               }, 2000)
