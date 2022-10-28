@@ -4,7 +4,7 @@
   "description": "Discord.js v14 Command-Handler. Commands, Events, Permissions and Cooldown Handlers for Discord.js v14 bot - coded by Excriyin#8519",
   "main": "index.js",
   "scripts": {
-    "start": "node index.j",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
