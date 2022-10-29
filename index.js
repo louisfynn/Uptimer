@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
 const set = require(`${process.cwd()}/Assets/Config/settings`);
+const config = require (`${process.cwd()}/Assets/Config/settings`);
 require(`colors`)
 const client = new Client({
   allowedMentions: {
@@ -17,6 +18,7 @@ const client = new Client({
   partials: [Partials.Channel, Partials.Message, Partials.User, Partials.GuildMember, Partials.Reaction]
 });
 
+const config = TOKEN;
 
 [`variables`, `extraEvents`, `checker`, `mongo_db`, `server`, 'slashCommand', 'events', `antiCrash`].forEach((handler) => {
   const file = require(`./src/handlers/${handler}`)
@@ -24,7 +26,7 @@ const client = new Client({
   else file(client);
 });
 
-client.login(process.env.TOKEN).catch((error) => { console.log((error.message).bold.red) });
+client.login(config.TOKEN).catch((error) => { console.log((error.message).bold.red) });
 
 
 module.exports = client;
