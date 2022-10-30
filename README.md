@@ -1,6 +1,6 @@
 <div align="center">
 
-![Uptimer Logo](https://media.discordapp.net/attachments/1033006722639462482/1034134620528189500/uptimer.png)
+![Uptimer Logo](https://media.discordapp.net/attachments/1032820975877754960/1036330046056583189/uptimer.png)
 
 # Uptimer
 Uptimer is a bot that will monitor your projects/links and keep them running up 24/7 for free!
