@@ -2,7 +2,6 @@ const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js'
 const set = require(`${process.cwd()}/Assets/Config/settings`);
 const config = require(`${process.cwd()}/Assets/Config/config.js`);
 require(`colors`)
-const fs = require('fs')
 
 const client = new Client({
   allowedMentions: {
@@ -22,8 +21,6 @@ const client = new Client({
 });
 const TOKEN = config.TOKEN;
 
-client.function = require('./src/functions/functions.js')
-client.commands = new Collection();
 
 
 [`variables`, `extraEvents`, `checker`, `mongo_db`, `server`, 'slashCommand', 'events', `antiCrash`].forEach((handler) => {

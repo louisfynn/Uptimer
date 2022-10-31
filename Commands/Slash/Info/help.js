@@ -1,10 +1,8 @@
-
-const { EmbedBuilder, ApplicationCommandType, ComponentType } = require('discord.js')
-const fs = require('fs')
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js')
 
 module.exports = {
 	name: 'help',
-	description: "Shows you a help menu!",
+	description: "Shows you the list of commands!",
   usage: "",
   category: "info",
 	userPerms: [''],
@@ -14,42 +12,68 @@ module.exports = {
   ownerOnly: false,
   toggleOff: false,
   nsfwOnly: false,
-  maintenance: true,
+  maintenance: false,
 	type: ApplicationCommandType.ChatInput,
   	run: async (client, interaction) => {
-let intro = `The available commands are provided below. To view the available commands, select the command name from the selection menu provided below`
-    let components = await client.function.helpComponentBuilder()
-    let embed = new EmbedBuilder()
-      .setColor('#f54242')
-      .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL() })
-      .setDescription(`${intro}\n\n**Hi I'm Uptimer! A discord bot that lets your projects run 24/7 for free!**`)
-    await interaction.reply({ embeds: [embed], components: components })
-    try {
-      let filter = u => u.user.id === interaction.member.id;
-      let collector = await interaction.channel.awaitMessageComponent({
-        filter,
-        time: 30000,
-        componentType: ComponentType.SelectMenu
-      })
-
-
-      let category = collector.values[0].split('_')[1]
-      let commands = fs.readdirSync(`./Commands/Slash/${category}`).filter(file => file.endsWith(".js"))
-      let capCategory = category.charAt(0).toUpperCase() + category.substr(1)
-      let emojiSync = {
-        'Fun': '👾',
-        'Info': '🤖',
-        'Uptime': '🛎',       
-        'Utility': '🔘'
-      }
-      components[0].components[0].setDisabled(true)
-        .setPlaceholder(`${emojiSync[category]} ${capCategory}`)
-      collector.deferUpdate()
-      embed.setTitle(`${emojiSync[category]} ${capCategory} Commands`)
-        .setDescription(`> \`${commands.join('\` • \`').replace(/.js/g, '')}\``)
-      await interaction.editReply({ embeds: [embed], components: components })
-    } catch (err) {
-      return
+      
+       const embed = new EmbedBuilder()
+            .setTitle('Uptimer Commands')
+            .setColor(0x00ffff)
+            .setURL(`https://uptimer.lol`)
+            .addFields([
+                {
+                    name: `/monitor add `,
+                    value: `Adds monitor to your project.`,
+                    inline: true
+                },
+                {
+                    name: `/monitor remove`,
+                    value: `Remove monitor from your projects.`,
+                    inline: true
+                },
+                {
+                    name: `/monitor total`,
+                    value: `Show all projects.`,
+                    inline: true
+                },
+                {
+                    name: `/invite`,
+                    value: `Get the bot's invite link.`,
+                    inline: true
+                },
+                  {
+                    name: `/ping`,
+                    value: `Check bot's ping.`,
+                    inline: true
+                },
+                  {
+                    name: `/stats`,
+                    value: `show the current statistics of the bot.`,
+                    inline: true
+                },
+     {
+                    name: `/together`,
+                    value: `Watch youtube videos together!`,
+                    inline: true
+                },
+     {
+                    name: `/first-message`,
+                    value: `Get the First Message in a Channel.`,
+                    inline: true
+                },
+     {
+                    name: `/meme`,
+                    value: `sends an epic meme`,
+                    inline: true
+                },
+     {
+                    name: `/role add`,
+                    value: `Manage roles of the server or members.`,
+                    inline: true
+                }
+            ]);
+            await interaction.reply({
+                embeds: [embed]
+            });
     }
-  }
-}
+};
