@@ -6,7 +6,7 @@ module.exports = {
       process.exit(1)
     }
     if (!ex.config.MONGO_DB) {
-      ex.logger("Enter MONGO_DB If you dont have then you can find one in our server => https://discord.gg/uoaio".bold.red)
+      ex.logger("Enter MONGO_DB If you dont have then you can find one in our server => https://discord.gg/p57Y2dvJzx".bold.red)
       process.exit(1)
     }
     if (!ex.config.CLIENT_ID) {

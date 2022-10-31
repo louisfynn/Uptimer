@@ -19,7 +19,7 @@ module.exports = {
       const user = msg.author;
       let embed = client.Embed()   
             .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
-            .setAuthor({name: `• ${user.username}'s Avatar`, url: "https://discord.gg/kUMhb37n8b", iconURL: client.embed.authoricon})
+            .setAuthor({name: `• ${user.username}'s Avatar`, url: "https://discord.gg/p57Y2dvJzx", iconURL: client.embed.authoricon})
             .setDescription(`*Click the button below to download!*`)
             .setImage(user.displayAvatarURL({ size: 2048, dynamic: true, format: "png" })); 
       const row = new ActionRowBuilder()
