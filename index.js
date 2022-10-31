@@ -1,6 +1,9 @@
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
 const set = require(`${process.cwd()}/Assets/Config/settings`);
+const config = require(`${process.cwd()}/Assets/Config/config.js`);
 require(`colors`)
+const fs = require('fs')
+
 const client = new Client({
   allowedMentions: {
     parse: ["roles", "users", "everyone"],
@@ -9,6 +12,7 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.GuildVoiceStates,
     GatewayIntentBits.GuildPresences,
     GatewayIntentBits.GuildMessageReactions,
     GatewayIntentBits.DirectMessages,
@@ -16,6 +20,10 @@ const client = new Client({
   ],
   partials: [Partials.Channel, Partials.Message, Partials.User, Partials.GuildMember, Partials.Reaction]
 });
+const TOKEN = config.TOKEN;
+
+client.function = require('./src/functions/functions.js')
+client.commands = new Collection();
 
 
 [`variables`, `extraEvents`, `checker`, `mongo_db`, `server`, 'slashCommand', 'events', `antiCrash`].forEach((handler) => {
@@ -23,8 +31,9 @@ const client = new Client({
   if (file.execute) file.execute(client);
   else file(client);
 });
-
-client.login("MTAzNDEwOTY1MTY3NzA4NTcwNg.Gmi2lS.9DB9H4mhA2FK0PBBEt3Dep8k3TEaC8DO5bLQ84").catch((error) => { console.log((error.message).bold.red) });
+client.login(config.TOKEN).catch((error) => { 
+  console.log((error.message).bold.red);
+})
 
 
 module.exports = client;

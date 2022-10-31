@@ -7,7 +7,7 @@ module.exports = async (projects, client) => {
     UrlsConfig.findOne({
       URL: url,
     }, async function(err, doc) {
-      // let pinged = doc.pinged || doc.get("pinged");
+       let pinged = doc.pinged || doc.get("pinged");
       let errors = false;
       try {
         await fetch(url);
@@ -23,12 +23,12 @@ module.exports = async (projects, client) => {
         );
       } finally {
         if (!errors) {
-          // pinged++;
+           pinged++;
           await UrlsConfig.findOneAndUpdate(
             { URL: url },
             {
               error: false,
-              // pinged,
+               pinged,
             },
             { new: true }
           );

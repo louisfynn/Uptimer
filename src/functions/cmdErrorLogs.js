@@ -9,7 +9,7 @@ function slash(client, interaction, error) {
   interaction.reply({
     embeds: [new EmbedBuilder()
       .setColor(client.embed.color)
-      .setAuthor({ name: `An error has occured! Try again later!`, url: "https://discord.gg/pXRT2FusPb" })
+      .setAuthor({ name: `An error has occured! Try again later!`, url: "https://discord.gg/p57Y2dvJzx" })
     ],
     ephemeral: true
   }).catch((e) => {
@@ -17,7 +17,7 @@ function slash(client, interaction, error) {
       content: `${interaction.user}`,
       embeds: [new EmbedBuilder()
         .setColor(client.embed.color)
-        .setAuthor({ name: ` An error has occured! Try again later!`, url: "https://discord.gg/pXRT2FusPb" })],
+        .setAuthor({ name: ` An error has occured! Try again later!`, url: "https://discord.gg/p57Y2dvJzx" })],
     }).then(m => setTimeout(() => m.delete(), 9000));
   })
   if (set.COMMANDS_ERROR_LOGS && client.config.CHANNELS.ERROR_COMMAND_LOGS) client.channels.cache.get(client.config.CHANNELS.ERROR_COMMAND_LOGS).send({

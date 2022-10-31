@@ -58,7 +58,7 @@ module.exports = {
                 client.Embed()
                   .setAuthor({
                     name: `${client.user.username} Bot Total Projects`,
-                    url: "https://discord.gg/pXRT2FusPb",
+                    url: "https://discord.gg/p57Y2dvJzx",
                     iconURL: client.user.displayAvatarURL()
                   })
                   .addFields(

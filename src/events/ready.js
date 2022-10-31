@@ -7,15 +7,10 @@ module.exports = {
   async execute(client) {
     client.on("ready", () => {
       const activities = [
-        { name: `${client.guilds.cache.size} Servers`, type: 2 }, // LISTENING
-        { name: `${client.channels.cache.size} Channels`, type: 0 }, // PLAYING
-        { name: `${client.users.cache.size} Users`, type: 3 }, // WATCHING
-        { name: `Discord.js v14 by Excriyin#8519`, type: 5 } // COMPETING
+        { name: `/monitor add | uptimer.lol`, type: 0 } // LISTENING
       ];
       const status = [
-        'online',
-        'dnd',
-        'idle'
+        'online'
       ];
       let i = 0;
       setInterval(() => {

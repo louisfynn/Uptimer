@@ -14,7 +14,7 @@ module.exports = {
     client.buttons = new Collection();
     client.aliases = new Collection();
     client.events = new Collection();
-    client.loadingEmbed = new EmbedBuilder().setAuthor({ name: "Loading.... Please Wait", iconURL: client.embed.loadingicon, url: "https://discord.gg/kUMhb37n8b" }).setColor(client.embed.stanbycolor)
+    client.loadingEmbed = new EmbedBuilder().setAuthor({ name: "Loading.... Please Wait", iconURL: client.embed.loadingicon, url: "https://discord.gg/p57Y2dvJzx" }).setColor(client.embed.stanbycolor)
     client.Embed = (footer = true) => {
       let embed = new EmbedBuilder();
       if (!embed.color) embed.setColor(client.embed.color);
