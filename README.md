@@ -21,7 +21,7 @@ You can also use our dashboard to add your links and monitor them too!
 - /help - shows help menu for commands
 - /first-message - Get the First Message in a Channel.
 - /meme - sends an epic meme.
-- /stats - show the curent statistics of the bot
+- /stats - show the current statistics of the bot
   </br>
  
   <br>
