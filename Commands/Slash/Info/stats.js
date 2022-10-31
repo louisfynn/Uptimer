@@ -31,11 +31,11 @@ module.exports = {
             .setColor('#b50b11')
             .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL(), })
             .addFields(
-                { name: '⌛Memory Usage', value: `\`${usedMem}\`/\`${totalMem} MB\``, inline: true },
-                { name: '🖥️Servers', value: `\`${serverCount}\``, inline: true },
+                { name: '⌛ Memory Usage', value: `\`${usedMem}\`/\`${totalMem} MB\``, inline: true },
+                { name: '🖥️ Servers', value: `\`${serverCount}\``, inline: true },
                 { name: 'Discord.js', value: `\`${djsVer}\``, inline: true },
                 { name: 'NodeJS', value: `\`${nodeJSVer}\``, inline: true },
-                { name: '💽CPU Usage', value: `\`${cpuPercent}%\``, inline: true },
+                { name: '💽 CPU Usage', value: `\`${cpuPercent}%\``, inline: true },
             )
         await interaction.followUp({ embeds: [embed] })
     },
