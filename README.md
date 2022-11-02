@@ -15,9 +15,9 @@ You can also use our dashboard to add your links and monitor them too!
  
 - /monitor add  - Adds monitor to your project.
 - /monitor remove - Remove monitor from your projects.
-- /monitor total - Show all projects
-- /invite - Get the bot's invite link
-- /ping - Check bot's ping
+- /monitor total - Show all projects.
+- /invite - Get the bot's invite link.
+- /ping - Check bot's ping.
 - /help - shows the list of commands!
 - /first-message - Get the First Message in a Channel.
 - /meme - sends an epic meme.
