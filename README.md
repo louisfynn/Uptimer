@@ -62,4 +62,4 @@ If you need any additional help, make sure to join support server [here](https:/
 
 ## Credits
 
-Uo#1428 for the Code! Check out his support server! [here](https://discord.gg/uoaio)
+Uo#1428 for most of the code! Check out his support server! [here](https://discord.gg/uoaio)
