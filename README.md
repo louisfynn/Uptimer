@@ -58,3 +58,8 @@ npm install
 
 If you need any additional help, make sure to join support server [here](https://discord.gg/p57Y2dvJzx)
 <br>
+
+
+## Credits
+
+Uo#1428 for the Code! 
